@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/camellia" name="dm700-devs/device_xiaomi_camellia.git" remote="github" revision="lineage-23.2" />
+ <project path="device/xiaomi/mt6833-common" name="xiaomi-mt6833-dev/device_xiaomi_mt6833-common.git" remote="github" revision="lineage-22.2" />
+ <project path="vendor/xiaomi" name="dm700-devs/vendor_xiaomi_camellia.git" remote="github" revision="fourteen" />
+ <project path="kernel/xiaomi/camellia" name="camellia-devs/kernel_xiaomi_mt6833.git" remote="github" revision="flyme" />
+ 
+</manifest>
