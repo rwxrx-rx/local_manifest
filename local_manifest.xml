@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Remote Source (GitHub) -->
+  <remote name="github" fetch="https://github.com" />
 
- <!-- Trees -->
- <project path="device/xiaomi/camellia" name="dm700-devs/device_xiaomi_camellia.git" remote="github" revision="lineage-23.2" />
- <project path="device/xiaomi/mt6833-common" name="xiaomi-mt6833-dev/device_xiaomi_mt6833-common.git" remote="github" revision="lineage-22.2" />
- <project path="vendor/xiaomi" name="dm700-devs/vendor_xiaomi_camellia.git" remote="github" revision="fourteen" />
- <project path="kernel/xiaomi/camellia" name="camellia-devs/kernel_xiaomi_mt6833.git" remote="github" revision="flyme" />
- 
+  <!-- Device Tree (dm700-devs) -->
+  <project name="dm700-devs/device_xiaomi_camellia" 
+           path="device/xiaomi/camellia" 
+           remote="github" 
+           revision="lineage-23.2" />
+
+  <!-- Vendor Tree (aLpHa-Git-69) -->
+  <project name="aLpHa-Git-69/vendor_xiaomi_camellia" 
+           path="vendor/xiaomi/camellia" 
+           remote="github" 
+           revision="main" />
+
+  <!-- Kernel Tree (camellia-devs) -->
+  <project name="camellia-devs/kernel_xiaomi_mt6833" 
+           path="kernel/xiaomi/camellia" 
+           remote="github" 
+           revision="fylme" />
+
+  <!-- Hardware Xiaomi & MediaTek Common (Wajib untuk kompilasi) -->
+  <project name="LineageOS/android_hardware_xiaomi" 
+           path="hardware/xiaomi" 
+           remote="github" 
+           revision="lineage-23.0" />
+           
+  <project name="LineageOS/android_hardware_mediatek" 
+           path="hardware/mediatek" 
+           remote="github" 
+           revision="lineage-23.0" />
 </manifest>
